@@ -1,0 +1,1388 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "NATS";
+  src: url("../../Components/fonts/NATS-Regular.ttf") format("truetype");
+}
+@media screen and (max-width: 640px) {
+  .mdf {
+    display: block;
+  }
+  header {
+    width: 100%;
+    /* Отображаем текущий слайд */
+  }
+  header nav {
+    height: 104px;
+    background-image: url("../imgs/Frame 4.png");
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-position: 50%;
+    background-size: cover;
+  }
+  header nav img {
+    display: none;
+  }
+  header nav .nav__elements {
+    margin-top: 10px;
+    margin-bottom: 70px;
+    display: flex;
+    gap: 22px;
+  }
+  header nav .nav__elements .item {
+    display: block;
+    height: 60px;
+    background: rgb(56, 152, 254);
+    justify-content: center;
+    align-items: center;
+    width: 68px;
+  }
+  header nav .nav__elements .item h2 {
+    font-size: 52px;
+    line-height: 65px;
+    color: rgb(255, 255, 255);
+    font-family: NATS;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  header nav .nav__elements .item h3 {
+    color: rgb(56, 152, 254);
+    font-family: NATS;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  header .img {
+    width: 100%;
+    z-index: 1;
+  }
+  header .dff {
+    margin-top: 287px;
+    width: 100%;
+    display: flex;
+    gap: 8%;
+    justify-content: center;
+    position: absolute;
+  }
+  header .dff button {
+    width: 44vw;
+    justify-content: center;
+    height: 46px;
+    border-radius: 30px;
+    border: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(56, 152, 254);
+    color: rgb(255, 255, 255);
+    font-family: NATS;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(56, 152, 254);
+    padding: 0.9em 0.3em;
+  }
+  header .img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 855px;
+    display: none; /* Изначально скрываем все изображения */
+    transition: opacity 0.5s ease-in-out; /* Анимация для перехода opacity */
+    height: 417px; /* Ограничиваем максимальную ширину изображений */
+  }
+  header .img.active {
+    transition: opacity 0.5s ease-in-out; /* Анимация для перехода opacity */
+    display: block;
+  }
+  header .slideshow-container {
+    width: 100%;
+    height: 417px; /* Ограничиваем максимальную ширину изображений */
+    transition: opacity 0.5s ease-in-out; /* Анимация для перехода opacity */
+  }
+  header .img {
+    opacity: 0; /* Начально скрываем все слайды */
+    transition: opacity 0.5s ease-in-out; /* Анимация для перехода opacity */
+  }
+  section {
+    width: 100%;
+    background: rgb(20, 144, 244);
+  }
+  section .center {
+    align-items: center;
+    display: flex;
+  }
+  section .center .page_about {
+    display: block;
+    width: 100%;
+    padding-top: 50px;
+    gap: 45px;
+    margin-left: 3.2%;
+  }
+  section .center .page_about .duck {
+    width: 100%;
+    height: 1%;
+  }
+  section .center .page_about .dff {
+    width: 100%;
+  }
+  section .center .page_about .dff img {
+    width: 100%;
+    height: auto;
+  }
+  section .center .page_about .dff h5 {
+    font-size: 6.9vw;
+    color: rgb(255, 255, 255);
+    font-family: Microsoft Sans Serif;
+    font-weight: 400;
+    text-align: left;
+    width: 100%;
+  }
+  section .center .page_about .dff p {
+    font-size: 1.9vw;
+    color: rgb(255, 255, 255);
+    font-family: Microsoft Sans Serif;
+    font-weight: 400;
+    text-align: left;
+    width: 450%;
+  }
+  section .why .center {
+    width: 100%;
+    display: block;
+    justify-content: center;
+  }
+  section .why .center .why_item {
+    width: 100%;
+  }
+  section .why .center .why_item h2 {
+    font-size: 13.3vw;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    font-family: Microsoft Sans Serif;
+    font-weight: 600;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+  }
+  section .why .center .why_item h3 {
+    font-size: 1.9vw;
+    color: rgb(255, 255, 255);
+    font-family: Microsoft Sans Serif;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 25px;
+  }
+  section .why .center .why_item h4 {
+    font-size: 6.9vw;
+    color: rgb(255, 255, 255);
+    font-family: Microsoft Sans Serif;
+    font-weight: 400;
+    text-align: left;
+    width: 90%;
+    margin-left: 5%;
+  }
+  section .why .center .duck2 {
+    width: 95%;
+    height: 383px;
+    object-fit: cover;
+    margin-left: 5%;
+  }
+  section .tocenomics {
+    padding-top: 83px;
+    background: rgb(20, 144, 244);
+  }
+  section .tocenomics .center {
+    display: flex;
+    justify-content: center;
+  }
+  section .tocenomics .center img {
+    width: 100%;
+    height: 1%;
+  }
+  section .tocenomics .center .items h2 {
+    font-size: 8.1vw;
+    color: rgb(255, 255, 255);
+    font-family: ObelixPro;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 43px;
+  }
+  section .tocenomics .center .items h3 {
+    margin-top: 3%;
+    color: rgb(255, 255, 255);
+    font-family: ObelixPro;
+    font-size: 10vw;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  section .tocenomics .statistic {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 16px;
+  }
+  section .Roadmap {
+    width: 100%;
+    background: rgb(20, 144, 244);
+  }
+  section .Roadmap .center1 {
+    display: flex;
+    justify-content: center;
+  }
+  section .Roadmap .center1 img {
+    padding-top: 50px;
+    width: 78%;
+    height: auto;
+  }
+  section .Roadmap .center2 {
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+  }
+  section .Roadmap .center2 img {
+    display: none;
+  }
+  section .Roadmap .roadmap_df {
+    display: none;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 37px;
+  }
+  section .Roadmap .roadmap_df span {
+    color: white;
+  }
+  section .Roadmap .roadmap_df p {
+    font-size: 1.5vw;
+    font-family: NATS;
+    font-weight: 400;
+    line-height: 126.18%;
+    text-align: left;
+  }
+  section .Roadmap .roadmap_df .f1 {
+    width: 20%;
+  }
+  section .Roadmap .roadmap_df .f2 {
+    width: 16%;
+  }
+  section .Roadmap .roadmap_df .f3 {
+    width: 14%;
+  }
+  section .Roadmap .roadmap_df .f4 {
+    width: 16%;
+  }
+  section .Roadmap .roadmap_df .f5 {
+    width: 10%;
+  }
+  section .roadmap_phone .center {
+    display: flex;
+    justify-content: center;
+  }
+  section .roadmap_phone .center h2 {
+    color: rgb(255, 255, 255);
+    font-family: Cooper Black;
+    font-size: 57px;
+    font-weight: 400;
+    line-height: 65px;
+    text-align: left;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+  section .roadmap_phone .center h2 {
+    font-size: 87px;
+  }
+}
+@media screen and (max-width: 640px) {
+  section .roadmap_phone .df {
+    margin-top: 37px;
+    display: flex;
+    justify-content: center;
+  }
+  section .roadmap_phone .df span {
+    color: white;
+  }
+  section .roadmap_phone .df img {
+    width: 38px;
+    height: 769px;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+  section .roadmap_phone .df img {
+    width: 52px;
+    height: 1006px;
+    font-size: 82px;
+  }
+}
+@media screen and (max-width: 640px) {
+  section .roadmap_phone .df .ele1 h2 {
+    color: rgb(255, 255, 255);
+    font-family: Cooper Black;
+    font-size: 57px;
+    font-weight: 400;
+    line-height: 65px;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+  section .roadmap_phone .df .ele1 h2 {
+    font-size: 82px;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 640px) {
+  section .roadmap_phone .df .ele1 h3 {
+    width: 83px;
+    font-family: NATS;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 126.18%;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+  section .roadmap_phone .df .ele1 h3 {
+    width: 152px;
+    font-size: 17px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  section .roadmap_phone .df .mt5 {
+    padding-top: 70px;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+  section .roadmap_phone .df .mt5 {
+    padding-top: 95px;
+  }
+}
+@media screen and (max-width: 640px) {
+  section .roadmap_phone .df .ele2 {
+    margin-top: 117px;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+  section .roadmap_phone .df .ele2 {
+    margin-top: 165px;
+  }
+}
+@media screen and (max-width: 640px) {
+  section .roadmap_phone .df .ele2 h2 {
+    color: rgb(255, 255, 255);
+    font-family: Cooper Black;
+    font-size: 57px;
+    font-weight: 400;
+    line-height: 65px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+  section .roadmap_phone .df .ele2 h2 {
+    font-size: 82px;
+  }
+}
+@media screen and (max-width: 640px) {
+  section .roadmap_phone .df .ele2 h3 {
+    width: 79px;
+    font-family: NATS;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 126.18%;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+  section .roadmap_phone .df .ele2 h3 {
+    width: 152px;
+    font-size: 17px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  section .roadmap_phone .df .ele2 .mt4 {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+  section .roadmap_phone .df .ele2 .mt4 {
+    margin-top: 116px;
+  }
+}
+@media screen and (max-width: 640px) {
+  section .why {
+    background: rgb(20, 144, 244);
+    padding-top: 20px;
+  }
+  section .why .centerr {
+    display: flex;
+    justify-content: center;
+  }
+  section .why .centerr img {
+    width: 100%;
+    height: auto;
+  }
+  section .why .center {
+    width: 100%;
+    display: block;
+    justify-content: center;
+  }
+  section .why .center .items {
+    gap: 11%;
+    display: block;
+    justify-content: center;
+    margin-top: 75px;
+    margin-left: 4.5%;
+  }
+  section .why .center .items p {
+    width: 91%;
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+    font-family: ObelixPro;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  section .why .center .items span {
+    color: rgb(255, 255, 255);
+    font-family: ObelixPro;
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  section .contract {
+    margin-top: 50px;
+    background: rgb(20, 144, 244);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  section .contract .mm {
+    margin-left: 6%;
+    height: 1%;
+    width: 11%;
+    margin-bottom: 70px;
+  }
+  section .contract .qr {
+    margin-top: 13px;
+    width: 93px;
+    height: 93px;
+    margin-bottom: 20px;
+  }
+  section .contract .cl2 {
+    color: rgb(0, 66, 139);
+    font-family: ObelixPro;
+    text-align: left;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    font-size: 4.7vw;
+  }
+  section .contract .cl2 a {
+    color: rgb(0, 66, 139);
+  }
+  section .contract .cl1 {
+    font-size: 4.1vw;
+    color: white;
+    font-family: ObelixPro;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  footer {
+    background-size: 338%;
+    width: 100%;
+    background-image: url("../imgs/img_8.png");
+    background-position: 60%;
+    align-content: center;
+    background-repeat: no-repeat;
+  }
+  footer .back {
+    width: 100%;
+  }
+  footer .center {
+    display: flex;
+    justify-content: center;
+  }
+  footer .center span {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: 100%;
+  }
+  footer .center span img {
+    width: 95%;
+  }
+  footer .df {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+  }
+  footer .df button {
+    font-size: 7vw;
+    width: 34vw;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(0, 124, 255);
+    height: 61px;
+    color: rgb(255, 255, 255);
+    font-family: NATS;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    scale: calc(1 + var(--active) * 0.1);
+    transition: 0.3s;
+  }
+  footer .df button:hover {
+    width: 235px;
+    height: 67px;
+  }
+  .mouse-tracker {
+    display: none;
+  }
+}
+@media screen and (min-width: 641px) {
+  .none {
+    display: none;
+  }
+  .mdf {
+    display: flex;
+  }
+  header {
+    width: 100%;
+    /* Отображаем текущий слайд */
+  }
+  header nav {
+    background-image: url("../imgs/Frame 4.png");
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-position: 50%;
+    background-size: cover;
+  }
+  header nav .nav__elements {
+    margin-top: 101px;
+    margin-bottom: 70px;
+    display: flex;
+    gap: 22px;
+  }
+  header nav .nav__elements .item {
+    display: block;
+    width: 161px;
+    height: 107px;
+    background: rgb(56, 152, 254);
+    justify-content: center;
+    align-items: center;
+  }
+  header nav .nav__elements .item h2 {
+    margin-top: 12px;
+    color: rgb(255, 255, 255);
+    font-family: NATS;
+    font-size: 91px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  header nav .nav__elements .item h3 {
+    margin-top: 22px;
+    color: rgb(56, 152, 254);
+    font-family: NATS;
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  header .img {
+    width: 100%;
+    z-index: 1;
+  }
+  header .dff {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    gap: 43%;
+    justify-content: center;
+    position: absolute;
+  }
+  header .dff button {
+    border-radius: 50px;
+    border: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(56, 152, 254);
+    width: 289px;
+    height: 83px;
+    color: rgb(255, 255, 255);
+    font-family: NATS;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  header .img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 855px;
+    display: none; /* Изначально скрываем все изображения */
+    transition: opacity 0.5s ease-in-out; /* Анимация для перехода opacity */
+  }
+  header .img.active {
+    transition: opacity 0.5s ease-in-out; /* Анимация для перехода opacity */
+    display: block;
+  }
+  header .slideshow-container {
+    width: 100%;
+    max-height: 1013px; /* Ограничиваем максимальную ширину изображений */
+    transition: opacity 0.5s ease-in-out; /* Анимация для перехода opacity */
+  }
+  header .img {
+    width: 100%;
+    opacity: 0; /* Начально скрываем все слайды */
+    transition: opacity 0.5s ease-in-out; /* Анимация для перехода opacity */
+  }
+  section {
+    width: 100%;
+    background: rgb(20, 144, 244);
+  }
+  section .center {
+    align-items: center;
+    display: flex;
+  }
+  section .center .page_about {
+    display: flex;
+    width: 60%;
+    padding-top: 100px;
+    gap: 45px;
+    margin-left: 3.2%;
+  }
+  section .center .page_about .duck {
+    width: 83%;
+    height: 1%;
+  }
+  section .center .page_about .dff {
+    width: 60%;
+    margin-top: 75px;
+  }
+  section .center .page_about .dff img {
+    width: 268%;
+    height: auto;
+  }
+  section .center .page_about .dff p {
+    font-size: 1.9vw;
+    color: rgb(255, 255, 255);
+    font-family: Microsoft Sans Serif;
+    font-weight: 400;
+    text-align: left;
+    width: 450%;
+  }
+  section .why .center {
+    width: 92%;
+    display: flex;
+    justify-content: center;
+  }
+  section .why .center .why_item {
+    width: 40%;
+    margin-left: 18%;
+  }
+  section .why .center .why_item h2 {
+    font-size: 4vw;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    font-family: Microsoft Sans Serif;
+    font-weight: 600;
+    text-align: left;
+    width: 509px;
+  }
+  section .why .center .why_item h3 {
+    font-size: 1.9vw;
+    color: rgb(255, 255, 255);
+    font-family: Microsoft Sans Serif;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 25px;
+  }
+  section .why .center .duck2 {
+    margin-left: 5%;
+    width: 50%;
+    clip-path: inset(0 10% 0 0);
+  }
+  section .tocenomics {
+    padding-top: 123px;
+    width: 100%;
+    background: rgb(20, 144, 244);
+  }
+  section .tocenomics .center {
+    display: flex;
+    justify-content: center;
+  }
+  section .tocenomics .center img {
+    width: 692px;
+    height: 401px;
+  }
+  section .tocenomics .center .items h2 {
+    font-size: 3.1vw;
+    color: rgb(255, 255, 255);
+    font-family: ObelixPro;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 78px;
+  }
+  section .tocenomics .center .items h3 {
+    margin-top: 7%;
+    color: rgb(255, 255, 255);
+    font-family: ObelixPro;
+    font-size: 5vw;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  section .tocenomics .statistic {
+    width: 59%;
+    height: auto;
+    margin-left: 30%;
+    margin-top: 30px;
+  }
+  section .Roadmap {
+    width: 100%;
+    background: rgb(20, 144, 244);
+  }
+  section .Roadmap .center1 {
+    display: flex;
+    justify-content: center;
+  }
+  section .Roadmap .center1 img {
+    width: 27%;
+    height: auto;
+  }
+  section .Roadmap .center2 {
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+  }
+  section .Roadmap .center2 img {
+    width: 86%;
+  }
+  section .Roadmap .roadmap_df {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 37px;
+  }
+  section .Roadmap .roadmap_df span {
+    color: white;
+  }
+  section .Roadmap .roadmap_df p {
+    font-size: 1.5vw;
+    font-family: NATS;
+    font-weight: 400;
+    line-height: 126.18%;
+    text-align: left;
+  }
+  section .Roadmap .roadmap_df .f1 {
+    width: 20%;
+  }
+  section .Roadmap .roadmap_df .f2 {
+    width: 16%;
+  }
+  section .Roadmap .roadmap_df .f3 {
+    width: 14%;
+  }
+  section .Roadmap .roadmap_df .f4 {
+    width: 16%;
+  }
+  section .Roadmap .roadmap_df .f5 {
+    width: 10%;
+  }
+  section .why {
+    background: rgb(20, 144, 244);
+    padding-top: 20px;
+  }
+  section .why .centerr {
+    display: flex;
+    justify-content: center;
+  }
+  section .why .centerr img {
+    width: 52%;
+    height: auto;
+  }
+  section .why .center {
+    width: 92%;
+    display: flex;
+    justify-content: center;
+  }
+  section .why .center .items {
+    gap: 11%;
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+  }
+  section .why .center .items p {
+    width: 18%;
+    line-height: 210%;
+    color: rgb(0, 0, 0);
+    font-family: ObelixPro;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 0.8vw;
+  }
+  section .why .center .items span {
+    font-size: 3.9vw;
+    color: rgb(255, 255, 255);
+    font-family: ObelixPro;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  section .contract {
+    margin-top: 50px;
+    width: 100%;
+    background: rgb(20, 144, 244);
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+  }
+  section .contract .mm {
+    margin-top: -12px;
+    height: 1%;
+    width: 7%;
+    margin-bottom: 70px;
+  }
+  section .contract .qr {
+    margin-left: 327px;
+    margin-top: -12px;
+    width: 8%;
+    height: 65%;
+  }
+  section .contract .cl2 {
+    color: rgb(0, 66, 139);
+    font-family: ObelixPro;
+    text-align: left;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    font-size: 2.1vw;
+  }
+  section .contract .cl2 a {
+    color: rgb(0, 66, 139);
+  }
+  section .contract .cl1 {
+    font-size: 2.1vw;
+    color: white;
+    font-family: ObelixPro;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  footer {
+    width: 100%;
+    background-image: url("../imgs/img_8.png");
+    background-position: 60%;
+    background-size: 135%;
+    align-content: center;
+    background-repeat: no-repeat;
+  }
+  footer .back {
+    width: 100%;
+  }
+  footer .center {
+    display: flex;
+    justify-content: center;
+  }
+  footer .center span {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: 100%;
+  }
+  footer .center span img {
+    width: 499px;
+  }
+  footer .df .btn1 {
+    margin-left: 32px;
+  }
+  footer .df .btn2 {
+    margin-left: 23px;
+  }
+  footer .df button {
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(0, 124, 255);
+    width: 215px;
+    height: 61px;
+    color: rgb(255, 255, 255);
+    font-family: NATS;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    scale: calc(1 + var(--active) * 0.1);
+    transition: 0.3s;
+  }
+  footer .df button:hover {
+    width: 235px;
+    height: 67px;
+  }
+  .roadmap_phone {
+    display: none;
+  }
+  .mouse-tracker {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5vmin;
+    height: 5vmin;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    opacity: 0.8;
+    transform: translate(-50%, -50%) translate(var(--mouse-x), var(--mouse-y));
+    pointer-events: none;
+  }
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+:root {
+  --transition: 0.25s;
+  --spark: 1.8s;
+}
+
+:root {
+  --bg: hsl(0 0% 2%);
+  --color: hsl(0 0% 100% / 0.1);
+  --underline-width: 1lh;
+  --underline-block-width: 200vmax;
+  --underline-color: hsl(0 0% 50% / 0.15);
+  --underline-color-hover: hsl(180 100% 50% / 1);
+  --underline-transition: 5s;
+  --finish-fill: hsl(0 0% 100%);
+  --accent: hsl(0 0% 100%);
+  --fill: hsl(0 0% 50%);
+}
+
+body {
+  background-color: var(--bg);
+}
+
+:root:has(#driver:checked) main {
+  outline: 1rem dashed hsla(0, 80%, 50%, 0.5);
+  background: hsla(0, 80%, 50%, 0.1);
+}
+
+h4 {
+  font-size: 1.9vw;
+  color: rgb(255, 255, 255);
+  font-family: Microsoft Sans Serif;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 25px;
+}
+
+h4 > span {
+  outline-color: hsl(10, 80%, 50%);
+  outline-offset: 1ch;
+  color: var(--color);
+  text-decoration: none;
+  background-image: linear-gradient(90deg, transparent calc(100% - 8ch), var(--accent) calc(100% - 8ch)), linear-gradient(90deg, var(--fill), var(--fill)), linear-gradient(90deg, var(--underline-color), var(--underline-color));
+  background-size: var(--underline-block-width) var(--underline-width), var(--underline-block-width) var(--underline-width), 100% var(--underline-width);
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 100%;
+  background-clip: text;
+  color: var(--finish-fill);
+}
+
+/*p > span {
+  background-clip: unset;
+  color: transparent;
+  background-position-x: -200vmax, -200vmax, 0;
+  animation: fill-up 4s infinite linear;
+}
+
+@keyframes fill-up {
+  to { background-position-x: 0, 0, 0; }
+}*/
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    main {
+      view-timeline-name: --section;
+    }
+    h4 > span {
+      background-position-x: calc(var(--underline-block-width) * -1), calc(var(--underline-block-width) * -1), 0;
+      color: transparent;
+      animation-name: fill-up, color-in;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+      animation-timeline: --section;
+      animation-range: entry 100% cover 50%, cover 50% exit 0%;
+    }
+    @keyframes fill-up {
+      to {
+        background-position-x: 0, 0, 0;
+      }
+    }
+    @keyframes color-in {
+      to {
+        color: var(--finish-fill);
+      }
+    }
+  }
+}
+.bf {
+  --cut: 0.1em;
+  --active: 0;
+  --bg: radial-gradient(
+                  40% 50% at center 100%,
+                  hsl(270 calc(var(--active) * 97%) 72% / var(--active)),
+                  transparent
+  ),
+  radial-gradient(
+                  80% 100% at center 120%,
+                  hsl(260 calc(var(--active) * 97%) 70% / var(--active)),
+                  transparent
+  ),
+  hsl(260 calc(var(--active) * 97%) calc((var(--active) * 44%) + 12%));
+  background: var(--bg);
+  font-size: 2rem;
+  font-weight: 500;
+  border: 0;
+  cursor: pointer;
+  padding: 0.9em 1.3em;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  white-space: nowrap;
+  position: relative;
+  box-shadow: 0 0 calc(var(--active) * 6em) calc(var(--active) * 3em) hsla(260, 97%, 61%, 0.75), 0 0.05em 0 0 hsl(260, calc(var(--active) * 97%), calc(var(--active) * 50% + 30%)) inset, 0 -0.05em 0 0 hsl(260, calc(var(--active) * 97%), calc(var(--active) * 60%)) inset;
+  transition: box-shadow var(--transition), scale var(--transition), background var(--transition);
+  scale: calc(1 + var(--active) * 0.1);
+}
+
+.bf:active {
+  scale: 1;
+}
+
+svg {
+  overflow: visible !important;
+}
+
+.sparkle path {
+  color: hsl(0, 0%, calc(var(--active, 0) * 70% + var(--base)));
+  transform-box: fill-box;
+  transform-origin: center;
+  fill: currentColor;
+  stroke: currentColor;
+  animation-delay: calc(var(--transition) * 1.5 + var(--delay) * 1s);
+  animation-duration: 0.6s;
+  transition: color var(--transition);
+}
+
+.bf:is(:hover, :focus-visible) path {
+  animation-name: bounce;
+}
+
+@keyframes bounce {
+  35%, 65% {
+    scale: var(--scale);
+  }
+}
+.sparkle path:nth-of-type(1) {
+  --scale: 0.5;
+  --delay: 0.1;
+  --base: 40%;
+}
+
+.sparkle path:nth-of-type(2) {
+  --scale: 1.5;
+  --delay: 0.2;
+  --base: 20%;
+}
+
+.sparkle path:nth-of-type(3) {
+  --scale: 2.5;
+  --delay: 0.35;
+  --base: 30%;
+}
+
+.bf:before {
+  content: "";
+  position: absolute;
+  inset: -0.25em;
+  z-index: -1;
+  border-radius: 100px;
+  opacity: var(--active, 0);
+  transition: opacity var(--transition);
+}
+
+.spark {
+  position: absolute;
+  inset: 0;
+  border-radius: 100px;
+  rotate: 0deg;
+  overflow: hidden;
+  mask: linear-gradient(white, transparent 50%);
+  animation: flip calc(var(--spark) * 2) infinite steps(2, end);
+}
+
+@keyframes flip {
+  to {
+    rotate: 360deg;
+  }
+}
+.spark:before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  aspect-ratio: 1;
+  top: 0%;
+  left: 50%;
+  z-index: -1;
+  translate: -50% -15%;
+  rotate: 0;
+  transform: rotate(-90deg);
+  opacity: calc((var(--active)) + 0.4);
+  background: conic-gradient(from 0deg, transparent 0 340deg, white 360deg);
+  transition: opacity var(--transition);
+  animation: rotate var(--spark) linear infinite both;
+}
+
+.spark:after {
+  content: "";
+  position: absolute;
+  inset: var(--cut);
+  border-radius: 100px;
+}
+
+.backdrop {
+  position: absolute;
+  inset: var(--cut);
+  background: var(--bg);
+  border-radius: 100px;
+  transition: background var(--transition);
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(90deg);
+  }
+}
+@supports (selector(:has(:is(+ *)))) {
+  body:has(.bf:is(:hover, :focus-visible)) {
+    --active: 1;
+    --play-state: running;
+  }
+  .bodydrop {
+    display: none;
+  }
+}
+bf:is(:hover, :focus-visible) ~ :is(.bodydrop, .particle-pen) {
+  --active: 1;
+  --play-state: runnin;
+}
+
+.bodydrop {
+  background: hsl(260, calc(var(--active) * 97%), 6%);
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+.bf:is(:hover, :focus-visible) {
+  --active: 1;
+  --play-state: running;
+}
+
+.sparkle-button {
+  position: relative;
+}
+
+:root:has(#driver:checked) main {
+  outline: 1rem dashed hsla(0, 80%, 50%, 0.5);
+  background: hsla(0, 80%, 50%, 0.1);
+}
+
+h4 {
+  font-size: 1.9vw;
+  color: rgb(255, 255, 255);
+  font-family: Microsoft Sans Serif;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 25px;
+}
+
+h4 > span {
+  outline-color: hsl(10, 80%, 50%);
+  outline-offset: 1ch;
+  color: var(--color);
+  text-decoration: none;
+  background-image: linear-gradient(90deg, transparent calc(100% - 8ch), var(--accent) calc(100% - 8ch)), linear-gradient(90deg, var(--fill), var(--fill)), linear-gradient(90deg, var(--underline-color), var(--underline-color));
+  background-size: var(--underline-block-width) var(--underline-width), var(--underline-block-width) var(--underline-width), 100% var(--underline-width);
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 100%;
+  background-clip: text;
+  color: var(--finish-fill);
+}
+
+/*p > span {
+  background-clip: unset;
+  color: transparent;
+  background-position-x: -200vmax, -200vmax, 0;
+  animation: fill-up 4s infinite linear;
+}
+
+@keyframes fill-up {
+  to { background-position-x: 0, 0, 0; }
+}*/
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    main {
+      view-timeline-name: --section;
+    }
+    h4 > span {
+      background-position-x: calc(var(--underline-block-width) * -1), calc(var(--underline-block-width) * -1), 0;
+      color: transparent;
+      animation-name: fill-up, color-in;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+      animation-timeline: --section;
+      animation-range: entry 10% cover 65%, cover 65% exit 0%;
+    }
+    @keyframes fill-up {
+      to {
+        background-position-x: 0, 0, 0;
+      }
+    }
+    @keyframes color-in {
+      to {
+        color: var(--finish-fill);
+      }
+    }
+  }
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+:root {
+  --transition: 0.25s;
+  --spark: 1.8s;
+}
+
+:root {
+  --bg: hsl(0 0% 2%);
+  --color: hsl(0 0% 100% / 0.1);
+  --underline-width: 1lh;
+  --underline-block-width: 200vmax;
+  --underline-color: hsl(0 0% 50% / 0.15);
+  --underline-color-hover: hsl(180 100% 50% / 1);
+  --underline-transition: 5s;
+  --finish-fill: hsl(0 0% 100%);
+  --accent: hsl(0 0% 100%);
+  --fill: hsl(0 0% 50%);
+}
+
+body {
+  background-color: var(--bg);
+}
+
+:root:has(#driver:checked) main {
+  outline: 1rem dashed hsla(0, 80%, 50%, 0.5);
+  background: hsla(0, 80%, 50%, 0.1);
+}
+
+h5 {
+  font-size: 1.9vw;
+  color: rgb(255, 255, 255);
+  font-family: Microsoft Sans Serif;
+  font-weight: 400;
+  text-align: left;
+  width: 450%;
+}
+
+h5 > span {
+  outline-color: hsl(10, 80%, 50%);
+  outline-offset: 1ch;
+  color: var(--color);
+  text-decoration: none;
+  background-image: linear-gradient(90deg, transparent calc(100% - 8ch), var(--accent) calc(100% - 8ch)), linear-gradient(90deg, var(--fill), var(--fill)), linear-gradient(90deg, var(--underline-color), var(--underline-color));
+  background-size: var(--underline-block-width) var(--underline-width), var(--underline-block-width) var(--underline-width), 100% var(--underline-width);
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 100%;
+  background-clip: text;
+  color: var(--finish-fill);
+}
+
+/*p > span {
+  background-clip: unset;
+  color: transparent;
+  background-position-x: -200vmax, -200vmax, 0;
+  animation: fill-up 4s infinite linear;
+}
+
+@keyframes fill-up {
+  to { background-position-x: 0, 0, 0; }
+}*/
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    main {
+      view-timeline-name: --section;
+    }
+    h5 > span {
+      background-position-x: calc(var(--underline-block-width) * -1), calc(var(--underline-block-width) * -1), 0;
+      color: transparent;
+      animation-name: fill-up, color-in;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+      animation-timeline: --section;
+      animation-range: entry 10% cover 65%, cover 65% exit 0%;
+    }
+    @keyframes fill-up {
+      to {
+        background-position-x: 0, 0, 0;
+      }
+    }
+    @keyframes color-in {
+      to {
+        color: var(--finish-fill);
+      }
+    }
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
