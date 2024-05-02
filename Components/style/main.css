@@ -393,7 +393,7 @@ a {
 @media screen and (max-width: 1050px) {
   section .roadmap_phone .df .ele1 h2 {
     color: rgb(255, 255, 255);
-    font-family: Cooper Black;
+    font-family: "Cooper Black";
     font-size: 57px;
     font-weight: 400;
     line-height: 65px;
