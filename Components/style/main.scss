@@ -13,6 +13,54 @@ a {
   src: url("../../Components/fonts/NATS-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "ObelixPro";
+  src: url("../../Components/fonts/ObelixPro.ttf") format("truetype");
+}
+
+.df2{
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50%;
+  background: #1490F4;
+  height: 30px;
+
+  @media screen and (max-width: 1280px){
+    gap: 30%;
+  }
+
+  @media screen and (max-width: 800px) {
+    gap: 10%;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 13px;
+    gap: 10%;
+
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+    gap: 10%;
+  }
+
+  @media screen and (max-width: 370px) {
+    font-size: 9px;
+    gap: 10%;
+  }
+
+
+  p{
+    font-family: sans-serif;
+  }
+
+  span{
+    color: white;
+  }
+}
+
 @media screen and (max-width: 640px) {
 
   .mdf{
@@ -24,7 +72,7 @@ a {
 
     nav {
       height: 104px;
-      background-image: url("../imgs/Frame 4.png");
+      background-image: url("../imgs/Frame 4.webp");
       display: flex;
       justify-content: center;
       align-content: center;
@@ -673,8 +721,9 @@ a {
   header {
     width: 100%;
 
+
     nav {
-      background-image: url("../imgs/Frame 4.png");
+      background-image: url("../imgs/Frame 4.webp");
       display: flex;
       justify-content: center;
       align-content: center;
@@ -755,12 +804,14 @@ a {
     }
 
     .img {
+      display: none;
       width: 100%;
       object-fit: cover;
       max-height: 855px;
-      display: none; /* Изначально скрываем все изображения */
       transition: opacity 0.5s ease-in-out; /* Анимация для перехода opacity */
     }
+
+
 
     /* Отображаем текущий слайд */
     .img.active {
@@ -770,8 +821,9 @@ a {
 
     .slideshow-container {
       width: 100%;
-      max-height: 1013px; /* Ограничиваем максимальную ширину изображений */
+      max-height: 855px; /* Ограничиваем максимальную ширину изображений */
       transition: opacity 0.5s ease-in-out; /* Анимация для перехода opacity */
+
 
     }
 
@@ -781,6 +833,15 @@ a {
       transition: opacity 0.5s ease-in-out; /* Анимация для перехода opacity */
     }
 
+    .img_around{
+      object-position: 50% 70%;
+      object-fit: cover;
+    }
+
+    .img_first{
+      object-fit: cover;
+      object-position: 50% 30%;
+    }
 
   }
 
@@ -837,7 +898,6 @@ a {
 
         .why_item {
           width: 40%;
-          margin-left: 18%;
 
           h2 {
             font-size: 4vw;
@@ -860,7 +920,6 @@ a {
         }
 
         .duck2 {
-          margin-left: 5%;
           width: 50%;
           clip-path: inset(0 10% 0 0);
         }
@@ -995,7 +1054,7 @@ a {
       }
 
       .center {
-        width: 92%;
+        width: 100%;
         display: flex;
         justify-content: center;
 
@@ -1011,7 +1070,7 @@ a {
             color: rgb(0, 0, 0);
             font-family: ObelixPro;
             font-weight: 400;
-            text-align: left;
+            text-align: center;
             text-transform: uppercase;
             font-size: 0.8vw;
           }
@@ -1037,6 +1096,8 @@ a {
       display: flex;
       justify-content: center;
       gap: 17px;
+      padding-bottom: 20px;
+
 
       .mm {
         margin-top: -12px;
@@ -1055,11 +1116,10 @@ a {
 
       .cl2 {
         color: rgb(0, 66, 139);
-        font-family: ObelixPro;
+        font-family: "Luckiest Guy", cursive;
         text-align: left;
         text-decoration-line: underline;
-        text-transform: uppercase;
-        font-size: 2.1vw;
+        font-size: 2.6vw;
 
 
         a {
@@ -1069,18 +1129,18 @@ a {
       }
 
       .cl1 {
-        font-size: 2.1vw;
+        font-size: 2.6vw;
         color: white;
-        font-family: ObelixPro;
         text-align: left;
         text-transform: uppercase;
+        font-family: "Luckiest Guy", cursive;
       }
     }
   }
 
   footer {
     width: 100%;
-    background-image: url("../imgs/img_8.png");
+    background-image: url("../imgs/img_8.webp");
     background-position: 60%;
     background-size: 135%;
     align-content: center;
@@ -1640,3 +1700,73 @@ h5 > span {
   }
 }
 
+.loader-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out; /* Плавный переход для opacity */
+}
+
+/* Скрытие загрузочного экрана */
+.loader-container.hidden {
+  opacity: 0; /* Устанавливаем нулевую прозрачность */
+  pointer-events: none; /* Отключаем события мыши */
+}
+
+/* Стили для контента страницы */
+.content {
+  display: none;
+}
+
+/* Стили для изображения загрузки */
+#loader-img {
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite; /* Анимация вращения */
+  object-fit: contain; /* Масштабирование изображения */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Стили для скроллбара */
+/* WebKit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 10px; /* Ширина скроллбара */
+}
+
+/* Ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Цвет ползунка */
+  border-radius: 5px; /* Скругление углов ползунка */
+}
+
+/* Полоса прокрутки (фон скроллбара) */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Цвет фона скроллбара */
+}
+
+/* Firefox */
+/* Ползунок скроллбара */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1; /* Цвет ползунка и фона скроллбара */
+}
+
+/* Edge */
+/* Ползунок скроллбара */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1; /* Цвет ползунка и фона скроллбара */
+}
