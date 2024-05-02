@@ -1,26 +1,26 @@
-// // Функция для обновления времени
-// function updateTime() {
-//     // Задаем дату, до которой идет обратный отсчет (YYYY, MM (начиная с 0), DD, HH, MM, SS)
-//     const targetDate = new Date(2024, 10, 5, 0, 0, 0); // Например, 1 июля 2024 года
-//
-//     // Получаем текущую дату и время
-//     const now = new Date();
-//
-//     // Вычисляем разницу между текущей датой и заданной датой в миллисекундах
-//     const diff = targetDate - now;
-//
-//     // Вычисляем количество дней, часов, минут и секунд
-//     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-//     const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//     const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-//     const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-//
-//     // Обновляем элементы на странице с новыми значениями времени
-//     document.getElementById('daysItem').querySelector('h2').textContent = days;
-//     document.getElementById('hoursItem').querySelector('h2').textContent = hours;
-//     document.getElementById('minutesItem').querySelector('h2').textContent = minutes;
-//     document.getElementById('secondsItem').querySelector('h2').textContent = seconds;
-// }
+// Функция для обновления времени
+function updateTime() {
+    // Задаем дату, до которой идет обратный отсчет (YYYY, MM (начиная с 0), DD, HH, MM, SS)
+    const targetDate = new Date(2024, 10, 5, 0, 0, 0); // Например, 1 июля 2024 года
+
+    // Получаем текущую дату и время
+    const now = new Date();
+
+    // Вычисляем разницу между текущей датой и заданной датой в миллисекундах
+    const diff = targetDate - now;
+
+    // Вычисляем количество дней, часов, минут и секунд
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    // Обновляем элементы на странице с новыми значениями времени
+    document.getElementById('daysItem').querySelector('h2').textContent = days;
+    document.getElementById('hoursItem').querySelector('h2').textContent = hours;
+    document.getElementById('minutesItem').querySelector('h2').textContent = minutes;
+    document.getElementById('secondsItem').querySelector('h2').textContent = seconds;
+}
 
 // Вызываем функцию updateTime() каждую секунду (1000 миллисекунд)
 setInterval(updateTime, 0);
