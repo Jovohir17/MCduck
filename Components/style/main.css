@@ -117,38 +117,11 @@ a {
     width: 100%;
     z-index: 1;
   }
-  header .dff {
-    margin-top: 287px;
-    width: 100%;
-    display: flex;
-    gap: 8%;
-    justify-content: center;
-    position: absolute;
-  }
-  header .dff button {
-    width: 44vw;
-    justify-content: center;
-    height: 46px;
-    border-radius: 30px;
-    border: 0;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background: rgb(56, 152, 254);
-    color: rgb(255, 255, 255);
-    font-family: NATS;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: center;
-    text-transform: uppercase;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background: rgb(56, 152, 254);
-    padding: 0.9em 0.3em;
-  }
   header .img {
     width: 100%;
     object-fit: cover;
     max-height: 855px;
-    display: none; /* Изначально скрываем все изображения */
+    position: absolute;
     transition: opacity 0.5s ease-in-out; /* Анимация для перехода opacity */
     height: 417px; /* Ограничиваем максимальную ширину изображений */
   }
@@ -168,9 +141,38 @@ a {
   header .img_duck {
     object-position: 70% 70%;
   }
+  header .img_around {
+    object-position: 90% 70%;
+  }
   section {
     width: 100%;
     background: rgb(20, 144, 244);
+  }
+  section .dfff {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    gap: 8%;
+    justify-content: center;
+    position: absolute;
+  }
+  section .dfff button {
+    background: rgb(56, 90, 254);
+    width: 44vw;
+    justify-content: center;
+    height: 46px;
+    border-radius: 30px;
+    border: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: rgb(255, 255, 255);
+    font-family: NATS;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 0.9em 0.3em;
   }
   section .center {
     align-items: center;
@@ -672,31 +674,8 @@ a {
     width: 100%;
     z-index: 1;
   }
-  header .dff {
-    margin-top: 70px;
-    width: 100%;
-    display: flex;
-    gap: 43%;
-    justify-content: center;
-    position: absolute;
-  }
-  header .dff button {
-    border-radius: 50px;
-    border: 0;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background: rgb(56, 152, 254);
-    width: 289px;
-    height: 83px;
-    color: rgb(255, 255, 255);
-    font-family: NATS;
-    font-size: 38px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: center;
-    text-transform: uppercase;
-  }
   header .img {
-    display: none;
+    position: absolute;
     width: 100%;
     object-fit: cover;
     max-height: 855px;
@@ -709,10 +688,12 @@ a {
   header .slideshow-container {
     width: 100%;
     max-height: 855px; /* Ограничиваем максимальную ширину изображений */
+    height: 855px;
     transition: opacity 0.5s ease-in-out; /* Анимация для перехода opacity */
   }
   header .img {
     width: 100%;
+    height: 855px;
     opacity: 0; /* Начально скрываем все слайды */
     transition: opacity 0.5s ease-in-out; /* Анимация для перехода opacity */
   }
@@ -728,6 +709,28 @@ a {
     width: 100%;
     background: rgb(20, 144, 244);
   }
+  section .dfff {
+    padding-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 43%;
+    justify-content: center;
+  }
+  section .dfff button {
+    background: rgb(56, 90, 254);
+    border-radius: 50px;
+    border: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 289px;
+    height: 83px;
+    color: rgb(255, 255, 255);
+    font-family: NATS;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+  }
   section .center {
     align-items: center;
     display: flex;
@@ -735,7 +738,7 @@ a {
   section .center .page_about {
     display: flex;
     width: 60%;
-    padding-top: 100px;
+    padding-top: 50px;
     gap: 45px;
     margin-left: 3.2%;
   }
