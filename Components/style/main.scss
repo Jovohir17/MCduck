@@ -252,7 +252,7 @@ a {
           h5{
             font-size: 6.9vw;
             color: rgb(255, 255, 255);
-            font-family: Microsoft Sans Serif;
+            font-family: sans-serif;
             font-weight: 400;
             text-align: left;
             width: 100%;
@@ -261,7 +261,7 @@ a {
           p {
             font-size: 1.9vw;
             color: rgb(255, 255, 255);
-            font-family: Microsoft Sans Serif;
+            font-family: sans-serif;
             font-weight: 400;
             text-align: left;
             width: 450%;
@@ -834,8 +834,12 @@ a {
     }
 
     .img_around{
-      object-position: 50% 70%;
-      object-fit: cover;
+      max-height: 1065px;
+      height: 1025px;
+      object-position: 48% 57%;
+      transform: scale(0.9);
+      display: block;
+      opacity: 1;
     }
 
     .img_first{
@@ -907,7 +911,7 @@ a {
           p {
             font-size: 1.9vw;
             color: rgb(255, 255, 255);
-            font-family: Microsoft Sans Serif;
+            font-family: sans-serif;
             font-weight: 400;
             text-align: left;
             width: 450%;
@@ -931,7 +935,7 @@ a {
             font-size: 4vw;
             margin-top: 50px;
             color: rgb(255, 255, 255);
-            font-family: Microsoft Sans Serif;
+            font-family: sans-serif;
             font-weight: 600;
             text-align: left;
             width: 509px;
@@ -940,7 +944,7 @@ a {
           h3 {
             font-size: 1.9vw;
             color: rgb(255, 255, 255);
-            font-family: Microsoft Sans Serif;
+            font-family: sans-serif;
             font-weight: 400;
             text-align: left;
             margin-top: 25px;
@@ -1290,7 +1294,7 @@ body {
 h4 {
   font-size: 1.9vw;
   color: rgb(255, 255, 255);
-  font-family: Microsoft Sans Serif;
+  font-family: sans-serif;
   font-weight: 400;
   text-align: left;
   margin-top: 25px;
@@ -1553,7 +1557,7 @@ bf:is(:hover, :focus-visible) ~ :is(.bodydrop, .particle-pen) {
 h4 {
   font-size: 1.9vw;
   color: rgb(255, 255, 255);
-  font-family: Microsoft Sans Serif;
+  font-family: sans-serif;
   font-weight: 400;
   text-align: left;
   margin-top: 25px;
@@ -1659,7 +1663,7 @@ body {
 h5 {
   font-size: 1.9vw;
   color: rgb(255, 255, 255);
-  font-family: Microsoft Sans Serif;
+  font-family: sans-serif;
   font-weight: 400;
   text-align: left;
   width: 450%;

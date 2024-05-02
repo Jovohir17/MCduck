@@ -26,38 +26,40 @@ function updateTime() {
 setInterval(updateTime, 0);
 
 
-let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    const slides = document.getElementsByClassName("img");
-    const currentSlide = document.getElementById("currentSlide");
-
-    // Скрыть все слайды
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].classList.remove("active");
-    }
-
-    // Увеличиваем индекс слайда
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
-
-    // Показываем текущий слайд с анимацией
-    slides[slideIndex - 1].style.opacity = "1"; // Плавно показываем слайд
-    slides[slideIndex - 1].classList.add("active");
-    currentSlide.value = slideIndex; // Обновляем индикатор текущего слайда
-
-    // Скрыть предыдущий слайд после небольшой задержки
-    setTimeout(function() {
-        const previousSlideIndex = slideIndex - 2 < 0 ? slides.length - 1 : slideIndex - 2;
-        slides[previousSlideIndex].style.opacity = "0"; // Плавно скрываем предыдущий слайд
-    }, 100); // Задержка перед скрытием предыдущего слайда (в миллисекундах)
-
-    // Задаем интервал автоматического переключения (например, каждые 3 секунды)
-    setTimeout(showSlides, 1500); // Измените время переключения по вашему желанию
-}
+//
+// let slideIndex = 0;
+// showSlides();
+//
+// function showSlides() {
+//     const slides = document.getElementsByClassName("img");
+//     const currentSlide = document.getElementById("currentSlide");
+//
+//     // Скрыть все слайды
+//     for (let i = 0; i < slides.length; i++) {
+//         slides[i].classList.remove("active");
+//     }
+//
+//     // Увеличиваем индекс слайда
+//     slideIndex++;
+//     if (slideIndex > slides.length) {
+//         slideIndex = 1;
+//     }
+//
+//     // Показываем текущий слайд с анимацией
+//     slides[slideIndex - 1].style.opacity = "1"; // Плавно показываем слайд
+//     slides[slideIndex - 1].classList.add("active");
+//     currentSlide.value = slideIndex; // Обновляем индикатор текущего слайда
+//
+//     // Скрыть предыдущий слайд после небольшой задержки
+//     setTimeout(function() {
+//         const previousSlideIndex = slideIndex - 2 < 0 ? slides.length - 1 : slideIndex - 2;
+//         slides[previousSlideIndex].style.opacity = "0"; // Плавно скрываем предыдущий слайд
+//     }, 100); // Задержка перед скрытием предыдущего слайда (в миллисекундах)
+//
+//     // Задаем интервал автоматического переключения (например, каждые 3 секунды)
+//     setTimeout(showSlides, 1500); // Измените время переключения по вашему желанию
+// }
 
 document.addEventListener("mousemove", e => {
     document.documentElement.style.setProperty("--mouse-x", e.clientX +'px');
