@@ -61,7 +61,7 @@ a {
   color: white;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1050px) {
   .mdf {
     display: block;
   }
@@ -164,6 +164,9 @@ a {
   header .img {
     opacity: 0; /* Начально скрываем все слайды */
     transition: opacity 0.5s ease-in-out; /* Анимация для перехода opacity */
+  }
+  header .img_duck {
+    object-position: 70% 70%;
   }
   section {
     width: 100%;
@@ -352,12 +355,12 @@ a {
     margin-top: 25px;
   }
 }
-@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+@media screen and (max-width: 1050px) and (min-width: 370px) and (max-width: 1050px) {
   section .roadmap_phone .center h2 {
     font-size: 87px;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1050px) {
   section .roadmap_phone .df {
     margin-top: 37px;
     display: flex;
@@ -371,14 +374,14 @@ a {
     height: 769px;
   }
 }
-@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+@media screen and (max-width: 1050px) and (min-width: 370px) and (max-width: 1050px) {
   section .roadmap_phone .df img {
     width: 52px;
     height: 1006px;
     font-size: 82px;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1050px) {
   section .roadmap_phone .df .ele1 h2 {
     color: rgb(255, 255, 255);
     font-family: Cooper Black;
@@ -388,13 +391,13 @@ a {
     text-align: right;
   }
 }
-@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+@media screen and (max-width: 1050px) and (min-width: 370px) and (max-width: 1050px) {
   section .roadmap_phone .df .ele1 h2 {
     font-size: 82px;
     margin-top: 5px;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1050px) {
   section .roadmap_phone .df .ele1 h3 {
     width: 83px;
     font-family: NATS;
@@ -404,34 +407,34 @@ a {
     text-align: right;
   }
 }
-@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+@media screen and (max-width: 1050px) and (min-width: 370px) and (max-width: 1050px) {
   section .roadmap_phone .df .ele1 h3 {
     width: 152px;
     font-size: 17px;
     margin-top: 10px;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1050px) {
   section .roadmap_phone .df .mt5 {
     padding-top: 70px;
   }
 }
-@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+@media screen and (max-width: 1050px) and (min-width: 370px) and (max-width: 1050px) {
   section .roadmap_phone .df .mt5 {
     padding-top: 95px;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1050px) {
   section .roadmap_phone .df .ele2 {
     margin-top: 117px;
   }
 }
-@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+@media screen and (max-width: 1050px) and (min-width: 370px) and (max-width: 1050px) {
   section .roadmap_phone .df .ele2 {
     margin-top: 165px;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1050px) {
   section .roadmap_phone .df .ele2 h2 {
     color: rgb(255, 255, 255);
     font-family: Cooper Black;
@@ -441,12 +444,12 @@ a {
     text-align: left;
   }
 }
-@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+@media screen and (max-width: 1050px) and (min-width: 370px) and (max-width: 1050px) {
   section .roadmap_phone .df .ele2 h2 {
     font-size: 82px;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1050px) {
   section .roadmap_phone .df .ele2 h3 {
     width: 79px;
     font-family: NATS;
@@ -456,24 +459,24 @@ a {
     text-align: left;
   }
 }
-@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+@media screen and (max-width: 1050px) and (min-width: 370px) and (max-width: 1050px) {
   section .roadmap_phone .df .ele2 h3 {
     width: 152px;
     font-size: 17px;
     margin-top: 10px;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1050px) {
   section .roadmap_phone .df .ele2 .mt4 {
     margin-top: 100px;
   }
 }
-@media screen and (max-width: 640px) and (min-width: 370px) and (max-width: 640px) {
+@media screen and (max-width: 1050px) and (min-width: 370px) and (max-width: 1050px) {
   section .roadmap_phone .df .ele2 .mt4 {
     margin-top: 116px;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1050px) {
   section .why {
     background: rgb(20, 144, 244);
     padding-top: 20px;
@@ -611,7 +614,7 @@ a {
     display: none;
   }
 }
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 1051px) {
   .none {
     display: none;
   }

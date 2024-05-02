@@ -61,7 +61,7 @@ a {
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1050px) {
 
   .mdf{
     display: block;
@@ -190,6 +190,11 @@ a {
       opacity: 0; /* Начально скрываем все слайды */
       transition: opacity 0.5s ease-in-out; /* Анимация для перехода opacity */
     }
+
+    .img_duck{
+      object-position: 70% 70%;
+    }
+
 
 
   }
@@ -425,7 +430,7 @@ a {
           text-align: left;
           margin-top: 25px;
 
-          @media screen and (min-width: 370px) and (max-width: 640px) {
+          @media screen and (min-width: 370px) and (max-width: 1050px) {
             font-size: 87px;
           }
         }
@@ -445,7 +450,7 @@ a {
           width: 38px;
           height: 769px;
 
-          @media screen and (min-width: 370px) and (max-width: 640px) {
+          @media screen and (min-width: 370px) and (max-width: 1050px) {
             width: 52px;
             height: 1006px;
             font-size: 82px;
@@ -463,7 +468,7 @@ a {
             line-height: 65px;
             text-align: right;
 
-            @media screen and (min-width: 370px) and (max-width: 640px) {
+            @media screen and (min-width: 370px) and (max-width: 1050px) {
               font-size: 82px;
               margin-top: 5px;
             }
@@ -471,7 +476,7 @@ a {
           }
 
           h3{
-            @media screen and (min-width: 370px) and (max-width: 640px) {
+            @media screen and (min-width: 370px) and (max-width: 1050px) {
               width: 152px;
               font-size: 17px;
               margin-top: 10px;
@@ -490,7 +495,7 @@ a {
         .mt5{
           padding-top: 70px;
 
-          @media screen and (min-width: 370px) and (max-width: 640px) {
+          @media screen and (min-width: 370px) and (max-width: 1050px) {
             padding-top: 95px;
           }
         }
@@ -498,7 +503,7 @@ a {
         .ele2{
           margin-top: 117px;
 
-          @media screen and (min-width: 370px) and (max-width: 640px) {
+          @media screen and (min-width: 370px) and (max-width: 1050px) {
             margin-top: 165px;
           }
 
@@ -510,7 +515,7 @@ a {
             line-height: 65px;
             text-align: left;
 
-            @media screen and (min-width: 370px) and (max-width: 640px) {
+            @media screen and (min-width: 370px) and (max-width: 1050px) {
               font-size: 82px;
             }
           }
@@ -523,7 +528,7 @@ a {
             line-height: 126.18%;
             text-align: left;
 
-            @media screen and (min-width: 370px) and (max-width: 640px) {
+            @media screen and (min-width: 370px) and (max-width: 1050px) {
               width: 152px;
               font-size: 17px;
               margin-top: 10px;
@@ -532,7 +537,7 @@ a {
 
           .mt4{
             margin-top: 100px;
-            @media screen and (min-width: 370px) and (max-width: 640px) {
+            @media screen and (min-width: 370px) and (max-width: 1050px) {
                margin-top: 116px;
             }
 
@@ -708,7 +713,7 @@ a {
   }
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 1051px) {
 
   .none{
     display: none;
