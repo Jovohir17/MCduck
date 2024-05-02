@@ -17,6 +17,10 @@ a {
   font-family: "ObelixPro";
   src: url("../../Components/fonts/ObelixPro.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Cooper Black";
+  src: url("../../Components/fonts/Cooper.ttf") format("truetype");
+}
 .df2 {
   background: white;
   display: flex;
