@@ -176,6 +176,9 @@ a {
     align-items: center;
     display: flex;
   }
+  section .center .qr {
+    display: none;
+  }
   section .center .page_about {
     display: block;
     width: 100%;
@@ -509,7 +512,6 @@ a {
     font-size: 15px;
     font-weight: 400;
     line-height: 36px;
-    letter-spacing: 0%;
     text-align: center;
     text-transform: uppercase;
   }
@@ -519,11 +521,11 @@ a {
     font-size: 75px;
     font-weight: 400;
     line-height: 36px;
-    letter-spacing: 0%;
     text-align: center;
     text-transform: uppercase;
   }
   section .contract {
+    padding-bottom: 70px;
     margin-top: 50px;
     background: rgb(20, 144, 244);
     display: flex;
@@ -534,7 +536,6 @@ a {
     margin-left: 6%;
     height: 1%;
     width: 11%;
-    margin-bottom: 70px;
   }
   section .contract .qr {
     margin-top: 13px;
@@ -563,7 +564,7 @@ a {
   footer {
     background-size: 338%;
     width: 100%;
-    background-image: url("../imgs/img_8.png");
+    background-image: url("../imgs/img_8.webp");
     background-position: 60%;
     align-content: center;
     background-repeat: no-repeat;
