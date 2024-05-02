@@ -392,6 +392,7 @@ a {
 }
 @media screen and (max-width: 1050px) {
   section .roadmap_phone .df .ele1 h2 {
+    font-family: "Cooper Black";
     color: rgb(255, 255, 255);
     font-size: 57px;
     font-weight: 400;
@@ -733,6 +734,9 @@ a {
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
+  }
+  section .dfff button:hover {
+    background: hsl(0, 0%, 79%);
   }
   section .center {
     align-items: center;

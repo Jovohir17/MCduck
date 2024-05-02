@@ -476,6 +476,7 @@ a {
 
 
           h2{
+            font-family: "Cooper Black";
             color: rgb(255, 255, 255);
             font-size: 57px;
             font-weight: 400;
@@ -864,6 +865,10 @@ a {
         line-height: 36px;
         text-align: center;
         text-transform: uppercase;
+      }
+
+      button:hover{
+        background: hsl(0 0% 79%);
       }
     }
 
