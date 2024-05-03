@@ -706,11 +706,7 @@ a {
   }
   header .img_around {
     max-height: 1065px;
-    height: 1025px;
-    object-position: 48% 57%;
-    transform: scale(0.9);
-    display: block;
-    opacity: 1;
+    object-position: 97%;
   }
   header .img_first {
     object-fit: cover;
@@ -1510,27 +1506,27 @@ h5 > span {
 
 /* Ползунок скроллбара */
 ::-webkit-scrollbar-thumb {
-  background-color: #888; /* Цвет ползунка */
+  background-color: #1490F4; /* Цвет ползунка */
   border-radius: 5px; /* Скругление углов ползунка */
 }
 
 /* Полоса прокрутки (фон скроллбара) */
 ::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* Цвет фона скроллбара */
+  background-color: #1490F4; /* Цвет фона скроллбара */
 }
 
 /* Firefox */
 /* Ползунок скроллбара */
 html {
   scrollbar-width: thin;
-  scrollbar-color: #888 #f1f1f1; /* Цвет ползунка и фона скроллбара */
+  scrollbar-color: #1490F4 #f1f1f1; /* Цвет ползунка и фона скроллбара */
 }
 
 /* Edge */
 /* Ползунок скроллбара */
 body {
   scrollbar-width: thin;
-  scrollbar-color: #888 #f1f1f1; /* Цвет ползунка и фона скроллбара */
+  scrollbar-color: #1490F4 #1490F4; /* Цвет ползунка и фона скроллбара */
 }
 
 /*# sourceMappingURL=main.css.map */

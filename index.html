@@ -342,10 +342,10 @@
                 </p>
 
                 <p data-aos="fade-up"
-                   data-aos-duration="2000">
+                   data-aos-duration="2000" >
                     <span>STEP 2</span> <br>
                     Send the invested amount of Ton to our contract development wallet
-                    <a style="color: white"> UQD2s9ID1M_DiSoCJ<br>31jxhEdmJ9Qsz7Huns3ckrBBoiVNSU8 </a>
+                    <a style="color: white" id="copyText1"> UQD2s9ID1M_DiSoCJ<br>31jxhEdmJ9Qsz7Huns3ckrBBoiVNSU8 </a>
                     check it again.
 
                     Do not send TON to the token contract, otherwise your funds will be lost.
@@ -372,7 +372,7 @@
             <div class="contract__item">
                 <p><span class="cl1">contract:</span>
 
-                <p><span class="cl2"><a href="#" id="copyText">UQD2s9ID1M_DiSoCJ31jx<br>hEdmJ9Qsz7Huns3ckrBBoi-<br class="none">VNSU8</a></span></p>
+                <p><span class="cl2"><a href="#" id="copyText2">UQD2s9ID1M_DiSoCJ31jx<br>hEdmJ9Qsz7Huns3ckrBBoi-<br class="none">VNSU8</a></span></p>
             </div>
 
 
@@ -430,40 +430,7 @@
 </script>
 <script>
     // Добавляем слушатель события клика на ссылку
-    document.getElementById('copyText').addEventListener('click', function(event) {
-        event.preventDefault(); // Отменяем стандартное действие ссылки
 
-        // Находим текст, который нужно скопировать
-        var textToCopy = this.textContent;
-
-        // Копируем текст в буфер обмена
-        copyTextToClipboard(textToCopy);
-
-        // Выводим сообщение о копировании (необязательно)
-        alert('Текст скопирован в буфер обмена.');
-
-        // Теперь можно перейти по ссылке или выполнить другие действия
-    });
-
-    // Функция для копирования текста в буфер обмена
-    function copyTextToClipboard(text) {
-        // Создаем временный элемент textarea для копирования текста
-        var textArea = document.createElement('textarea');
-        textArea.value = text;
-
-        // Добавляем textarea на страницу
-        document.body.appendChild(textArea);
-
-        // Выделяем текст в textarea
-        textArea.select();
-        textArea.setSelectionRange(0, 99999); // Для кросс-браузерной поддержки
-
-        // Копируем выделенный текст в буфер обмена
-        document.execCommand('copy');
-
-        // Удаляем временный элемент
-        document.body.removeChild(textArea);
-    }
 
 
 
