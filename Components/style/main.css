@@ -531,6 +531,10 @@ a {
     line-height: 36px;
     text-align: center;
   }
+  section .why .center .items p a {
+    width: 90%;
+    font-size: 12px;
+  }
   section .why .center .items span {
     color: rgb(255, 255, 255);
     font-family: ObelixPro;
