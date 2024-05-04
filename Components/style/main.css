@@ -933,6 +933,9 @@ a {
     text-align: center;
     font-size: 1vw;
   }
+  section .why .center .items a {
+    font-size: 0.7vw;
+  }
   section .why .center .items span {
     font-size: 3.9vw;
     color: rgb(255, 255, 255);
