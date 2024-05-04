@@ -21,6 +21,14 @@ a {
   font-family: "Cooper Black";
   src: url("../../Components/fonts/Cooper.ttf") format("truetype");
 }
+@font-face {
+  font-family: "INTER";
+  src: url("../../Components/fonts/inter.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Dimbo";
+  src: url("../../Components/fonts/Dimbo.ttf") format("truetype");
+}
 .df2 {
   background: white;
   display: flex;
@@ -517,12 +525,11 @@ a {
     width: 91%;
     margin-top: 50px;
     color: rgb(0, 0, 0);
-    font-family: ObelixPro;
+    font-family: "inter";
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 36px;
     text-align: center;
-    text-transform: uppercase;
   }
   section .why .center .items span {
     color: rgb(255, 255, 255);
@@ -542,9 +549,8 @@ a {
     gap: 10px;
   }
   section .contract .mm {
-    margin-left: 6%;
     height: 1%;
-    width: 11%;
+    width: 16%;
   }
   section .contract .qr {
     margin-top: 13px;
@@ -554,19 +560,18 @@ a {
   }
   section .contract .cl2 {
     color: rgb(0, 66, 139);
-    font-family: ObelixPro;
+    font-family: "Dimbo";
     text-align: left;
     text-decoration-line: underline;
-    text-transform: uppercase;
-    font-size: 4.7vw;
+    font-size: 8.7vw;
   }
   section .contract .cl2 a {
     color: rgb(0, 66, 139);
   }
   section .contract .cl1 {
-    font-size: 4.1vw;
+    font-size: 8.7vw;
     color: white;
-    font-family: ObelixPro;
+    font-family: "Dimbo";
     text-align: left;
     text-transform: uppercase;
   }
@@ -630,6 +635,7 @@ a {
   }
   .mdf {
     display: flex;
+    margin-top: -21px;
   }
   header {
     width: 100%;
@@ -918,10 +924,10 @@ a {
     width: 18%;
     line-height: 210%;
     color: rgb(0, 0, 0);
-    font-family: ObelixPro;
-    font-weight: 400;
+    font-family: inter;
+    font-weight: 600;
     text-align: center;
-    font-size: 0.8vw;
+    font-size: 1vw;
   }
   section .why .center .items span {
     font-size: 3.9vw;
@@ -955,20 +961,20 @@ a {
   }
   section .contract .cl2 {
     color: rgb(0, 66, 139);
-    font-family: "Luckiest Guy", cursive;
+    font-family: "Dimbo", cursive;
     text-align: left;
     text-decoration-line: underline;
-    font-size: 2.6vw;
+    font-size: 3.3vw;
   }
   section .contract .cl2 a {
     color: rgb(0, 66, 139);
   }
   section .contract .cl1 {
-    font-size: 2.6vw;
+    font-size: 3.6vw;
     color: white;
     text-align: left;
     text-transform: uppercase;
-    font-family: "Luckiest Guy", cursive;
+    font-family: "Dimbo", cursive;
   }
   footer {
     width: 100%;
