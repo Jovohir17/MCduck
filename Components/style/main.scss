@@ -8,6 +8,7 @@ a {
   text-decoration: none;
 }
 
+
 @font-face {
   font-family: "NATS";
   src: url("../../Components/fonts/NATS-Regular.ttf") format("truetype");
@@ -181,6 +182,8 @@ a {
     .img_duck{
       object-position: 70% 70%;
     }
+
+
 
     .img_around{
       object-position: 90% 70%;
@@ -744,6 +747,10 @@ a {
 }
 
 @media screen and (min-width: 1051px) {
+
+  .img_coin{
+    object-position: 0% 67%;
+  }
 
   .none{
     display: none;

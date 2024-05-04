@@ -634,6 +634,9 @@ a {
   }
 }
 @media screen and (min-width: 1051px) {
+  .img_coin {
+    object-position: 0% 67%;
+  }
   .none {
     display: none;
   }
