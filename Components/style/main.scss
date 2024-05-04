@@ -89,7 +89,7 @@ a {
     width: 100%;
 
     nav {
-      height: 104px;
+      height: 192px;
       background-image: url("../imgs/Frame 4.webp");
       display: flex;
       justify-content: center;
@@ -97,8 +97,16 @@ a {
       background-position: 50%;
       background-size: cover;
 
-      img{
-        display: none;
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+          img {
+            display: block;
+            width: 30%;
+          }
       }
 
       .nav__elements {
@@ -603,22 +611,31 @@ a {
           display: block;
           justify-content: center;
           margin-top: 75px;
-          margin-left: 4.5%;
 
-          p {
-            width: 91%;
-            margin-top: 50px;
-            color: rgb(0, 0, 0);
-            font-family: "inter";
-            font-size: 15px;
-            font-weight: 600;
-            line-height: 36px;
-            text-align: center;
+          .center {
+            display: flex;
+            justify-content: center;
 
-            a{
-              width: 90%;
-              font-size: 12px;
+            p {
+              width: 86%;
+              margin-top: 50px;
+              color: rgb(0, 0, 0);
+              font-family: "Dimbo";
+              font-size: 4.2vw;
+              font-weight: 600;
+              line-height: 36px;
+              text-align: center;
+
+              a {
+                font-family: "Dimbo";
+                text-align: left;
+                text-decoration-line: underline;
+                font-size: 4.2vw;
+                color: white;
+                font-weight: 400;
+              }
             }
+
           }
 
           span {
@@ -773,9 +790,16 @@ a {
       background-position: 50%;
       background-size: cover;
 
+      .center{
+        align-items: center;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+      }
 
       .nav__elements {
-        margin-top: 101px;
+        margin-top: 31px;
         margin-bottom: 70px;
         display: flex;
         gap: 22px;
@@ -899,7 +923,6 @@ a {
 
 
     .center {
-      align-items: center;
       display: flex;
 
       .page_about {
@@ -912,7 +935,6 @@ a {
 
         .duck {
           width: 83%;
-          height: 1%;
         }
 
         .dff {
@@ -1113,7 +1135,7 @@ a {
           margin-top: 75px;
 
           p {
-            width: 18%;
+            width: 73%;
             line-height: 210%;
             color: rgb(0, 0, 0);
             font-family: inter;
@@ -1124,7 +1146,8 @@ a {
           }
 
           a{
-            font-size: 0.7vw;
+            font-size: 0.9vw;
+            margin-left: -38px;
           }
           span {
             font-size: 3.9vw;

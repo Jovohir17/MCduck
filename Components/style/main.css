@@ -82,7 +82,7 @@ a {
     /* Отображаем текущий слайд */
   }
   header nav {
-    height: 104px;
+    height: 192px;
     background-image: url("../imgs/Frame 4.webp");
     display: flex;
     justify-content: center;
@@ -90,8 +90,15 @@ a {
     background-position: 50%;
     background-size: cover;
   }
-  header nav img {
-    display: none;
+  header nav .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  header nav .center img {
+    display: block;
+    width: 30%;
   }
   header nav .nav__elements {
     margin-top: 10px;
@@ -519,21 +526,28 @@ a {
     display: block;
     justify-content: center;
     margin-top: 75px;
-    margin-left: 4.5%;
   }
-  section .why .center .items p {
-    width: 91%;
+  section .why .center .items .center {
+    display: flex;
+    justify-content: center;
+  }
+  section .why .center .items .center p {
+    width: 86%;
     margin-top: 50px;
     color: rgb(0, 0, 0);
-    font-family: "inter";
-    font-size: 15px;
+    font-family: "Dimbo";
+    font-size: 4.2vw;
     font-weight: 600;
     line-height: 36px;
     text-align: center;
   }
-  section .why .center .items p a {
-    width: 90%;
-    font-size: 12px;
+  section .why .center .items .center p a {
+    font-family: "Dimbo";
+    text-align: left;
+    text-decoration-line: underline;
+    font-size: 4.2vw;
+    color: white;
+    font-weight: 400;
   }
   section .why .center .items span {
     color: rgb(255, 255, 255);
@@ -656,8 +670,14 @@ a {
     background-position: 50%;
     background-size: cover;
   }
+  header nav .center {
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
   header nav .nav__elements {
-    margin-top: 101px;
+    margin-top: 31px;
     margin-bottom: 70px;
     display: flex;
     gap: 22px;
@@ -755,7 +775,6 @@ a {
     background: hsl(0, 0%, 79%);
   }
   section .center {
-    align-items: center;
     display: flex;
   }
   section .center .page_about {
@@ -767,7 +786,6 @@ a {
   }
   section .center .page_about .duck {
     width: 83%;
-    height: 1%;
   }
   section .center .page_about .dff {
     width: 60%;
@@ -928,7 +946,7 @@ a {
     margin-top: 75px;
   }
   section .why .center .items p {
-    width: 18%;
+    width: 73%;
     line-height: 210%;
     color: rgb(0, 0, 0);
     font-family: inter;
@@ -937,7 +955,8 @@ a {
     font-size: 1vw;
   }
   section .why .center .items a {
-    font-size: 0.7vw;
+    font-size: 0.9vw;
+    margin-left: -38px;
   }
   section .why .center .items span {
     font-size: 3.9vw;
